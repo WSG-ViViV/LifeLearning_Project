@@ -41,9 +41,24 @@ namespace Magic_Number
 
             const int NBRS_MIN = 1;
             const int NBRS_MAX = 10;
+            const int NBRS_MAGIQUE = 5;
 
             int nbrs = DemanderNombre(NBRS_MIN, NBRS_MAX);
-            Console.WriteLine("Le nombres qu vous avez choisi est: " + nbrs);
+
+            if (NBRS_MAGIQUE > nbrs)
+                {
+                    Console.WriteLine("Le nombres magique est superieur a : " + nbrs);
+                }
+            else if (NBRS_MAGIQUE < nbrs)
+                {
+                    Console.WriteLine("Le nombres magique est inferieur a : " + nbrs);
+                }
+            else
+                {
+                    Console.WriteLine("Félicitation, vous avez trouver le nombres magique :" + nbrs);
+                }
+
+
         }
     }
 }
