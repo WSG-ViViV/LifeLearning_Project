@@ -58,17 +58,21 @@ namespace Magic_Number
                 if (NBRS_MAGIQUE > nbrs)
                 {
                     Console.WriteLine("Le nombres magique est superieur a : " + nbrs);
-                    NBRS_VIE--;
                     Console.WriteLine("");
-                    Console.WriteLine("Il vous reste " + NBRS_VIE + " essaie !!");
+                    Console.WriteLine("Il vous reste " + (NBRS_VIE - 1) + " essaie !!");
                 }
                 else if (NBRS_MAGIQUE < nbrs)
                 {
                     Console.WriteLine("Le nombres magique est inferieur a : " + nbrs);
-                    NBRS_VIE--;
                     Console.WriteLine("");
-                    Console.WriteLine("Il vous reste " + NBRS_VIE + " essaie !!");
+                    Console.WriteLine("Il vous reste " + (NBRS_VIE -1) + " essaie !!");
                 }
+                else
+                {
+                    // Nombre magique trouvé
+                    break;
+                }
+                NBRS_VIE--;
             }
             if (NBRS_MAGIQUE == nbrs)
             {
@@ -82,6 +86,7 @@ namespace Magic_Number
                 Console.WriteLine();
                 Console.WriteLine("---");
                 Console.WriteLine("Perdu, vos vie sont epuisé");
+                Console.WriteLine("Le nombre magique etait : " +NBRS_MAGIQUE);
                 Console.WriteLine("---");
             }
            
