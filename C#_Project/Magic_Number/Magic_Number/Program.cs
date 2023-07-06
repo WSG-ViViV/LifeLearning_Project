@@ -2,6 +2,7 @@
 using System;
 using System.Linq.Expressions;
 using System.Reflection.Metadata.Ecma335;
+using System.Xml;
 
 namespace Magic_Number
 {
@@ -9,7 +10,7 @@ namespace Magic_Number
     {
         static int DemanderNombre(int min, int max)
         {
-            int nbrs = min -1;
+            int nbrs = min - 1;
             while ((nbrs < min) || (nbrs > max))
             {
                 Console.WriteLine("Veuillez entrer un nombre compris entre " + min + " et " + max);
@@ -24,42 +25,68 @@ namespace Magic_Number
                     {
                         Console.WriteLine("le nombres doit etre comris entre " + min + " et " + max + ":");
                     }
-                    
-                    
+
+
                 }
                 catch
                 {
                     Console.WriteLine("Erreur vous devez entrer un nombre valide.");
                 }
             }
-            return nbrs;        
+            return nbrs;
         }
 
 
         static void Main(string[] args)
         {
+            Random rand = new Random();
 
             const int NBRS_MIN = 1;
             const int NBRS_MAX = 10;
-            const int NBRS_MAGIQUE = 5;
+            int NBRS_VIE = 4;
 
-            int nbrs = DemanderNombre(NBRS_MIN, NBRS_MAX);
+            int NBRS_MAGIQUE = rand.Next(NBRS_MIN, NBRS_MAX + 1);
 
-            if (NBRS_MAGIQUE > nbrs)
+            int nbrs = NBRS_MAGIQUE + 1;
+
+            while ((NBRS_MAGIQUE != nbrs) && (NBRS_VIE != 0))
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Vie restantes : " + NBRS_VIE);
+                nbrs = DemanderNombre(NBRS_MIN, NBRS_MAX);
+
+                if (NBRS_MAGIQUE > nbrs)
                 {
                     Console.WriteLine("Le nombres magique est superieur a : " + nbrs);
+                    NBRS_VIE--;
+                    Console.WriteLine("");
+                    Console.WriteLine("Il vous reste " + NBRS_VIE + " essaie !!");
                 }
-            else if (NBRS_MAGIQUE < nbrs)
+                else if (NBRS_MAGIQUE < nbrs)
                 {
                     Console.WriteLine("Le nombres magique est inferieur a : " + nbrs);
+                    NBRS_VIE--;
+                    Console.WriteLine("");
+                    Console.WriteLine("Il vous reste " + NBRS_VIE + " essaie !!");
                 }
+            }
+            if (NBRS_MAGIQUE == nbrs)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("+++");
+                Console.WriteLine("Félicitation, vous avez trouver le nombres magique : " + nbrs);
+                Console.WriteLine("+++");
+            }
             else
-                {
-                    Console.WriteLine("Félicitation, vous avez trouver le nombres magique :" + nbrs);
-                }
-
-
+            {
+                Console.WriteLine();
+                Console.WriteLine("---");
+                Console.WriteLine("Perdu, vos vie sont epuisé");
+                Console.WriteLine("---");
+            }
+           
         }
+
     }
 }
 
