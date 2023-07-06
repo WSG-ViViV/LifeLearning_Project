@@ -79,6 +79,7 @@ namespace Magic_Number
                 Console.WriteLine("+++");
                 Console.WriteLine("Félicitation, vous avez trouver le nombres magique : " + nbrs);
                 Console.WriteLine("+++");
+                Console.ReadLine();
             }
             else
             {
@@ -87,6 +88,7 @@ namespace Magic_Number
                 Console.WriteLine("Perdu, vos vie sont epuisé");
                 Console.WriteLine("Le nombre magique etait : " +NBRS_MAGIQUE);
                 Console.WriteLine("---");
+                Console.ReadLine();
             }
         }
 
