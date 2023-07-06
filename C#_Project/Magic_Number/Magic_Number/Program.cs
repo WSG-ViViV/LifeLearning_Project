@@ -44,12 +44,11 @@ namespace Magic_Number
             const int NBRS_MIN = 1;
             const int NBRS_MAX = 10;
             int NBRS_VIE = 4;
-
             int NBRS_MAGIQUE = rand.Next(NBRS_MIN, NBRS_MAX + 1);
-
             int nbrs = NBRS_MAGIQUE + 1;
 
             while ((NBRS_MAGIQUE != nbrs) && (NBRS_VIE != 0))
+            //for (; NBRS_VIE > 0; NBRS_VIE--)
             {
                 Console.WriteLine("");
                 Console.WriteLine("Vie restantes : " + NBRS_VIE);
@@ -73,7 +72,7 @@ namespace Magic_Number
                     break;
                 }
                 NBRS_VIE--;
-            }
+            }           
             if (NBRS_MAGIQUE == nbrs)
             {
                 Console.WriteLine("");
@@ -89,7 +88,6 @@ namespace Magic_Number
                 Console.WriteLine("Le nombre magique etait : " +NBRS_MAGIQUE);
                 Console.WriteLine("---");
             }
-           
         }
 
     }
