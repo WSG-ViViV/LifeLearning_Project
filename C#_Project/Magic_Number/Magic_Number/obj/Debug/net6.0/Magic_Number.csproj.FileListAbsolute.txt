@@ -1,0 +1,15 @@
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\bin\Debug\net6.0\Magic_Number.exe
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\bin\Debug\net6.0\Magic_Number.deps.json
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\bin\Debug\net6.0\Magic_Number.runtimeconfig.json
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\bin\Debug\net6.0\Magic_Number.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\bin\Debug\net6.0\Magic_Number.pdb
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.csproj.AssemblyReference.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.AssemblyInfoInputs.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.AssemblyInfo.cs
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\refint\Magic_Number.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.pdb
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\Magic_Number.genruntimeconfig.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Magic_Number\Magic_Number\obj\Debug\net6.0\ref\Magic_Number.dll
