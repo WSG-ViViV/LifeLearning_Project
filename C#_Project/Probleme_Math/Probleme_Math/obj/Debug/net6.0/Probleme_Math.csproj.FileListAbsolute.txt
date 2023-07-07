@@ -1,0 +1,15 @@
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\bin\Debug\net6.0\Probleme_Math.exe
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\bin\Debug\net6.0\Probleme_Math.deps.json
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\bin\Debug\net6.0\Probleme_Math.runtimeconfig.json
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\bin\Debug\net6.0\Probleme_Math.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\bin\Debug\net6.0\Probleme_Math.pdb
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.csproj.AssemblyReference.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.AssemblyInfoInputs.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.AssemblyInfo.cs
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\refint\Probleme_Math.dll
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.pdb
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\Probleme_Math.genruntimeconfig.cache
+C:\Users\Shadow\Documents\GitHub\LifeLearning_Project\C#_Project\Probleme_Math\Probleme_Math\obj\Debug\net6.0\ref\Probleme_Math.dll
