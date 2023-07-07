@@ -79,7 +79,25 @@ namespace jeu_de_maths
                 }
                 Console.WriteLine("");
             }
-            Console.WriteLine(" Votre score est de " + score + "/" + NB_QUESTION + " !!");
+            Console.WriteLine("Bonne réponse " + score + " sur " + NB_QUESTION);
+            float moyenne = NB_QUESTION / 2;
+
+            if (score == NB_QUESTION)
+            {
+                Console.WriteLine("Excellent !!!");
+            }
+            else if (score == 0) 
+            {
+                Console.WriteLine("Réviser vos maths !!!");
+            }
+            else if (score > moyenne)
+            {
+                Console.WriteLine("Pas mal !!");
+            }
+            else
+            {
+                Console.WriteLine("Peux mieux faire !");
+            }
         }
         
     }
