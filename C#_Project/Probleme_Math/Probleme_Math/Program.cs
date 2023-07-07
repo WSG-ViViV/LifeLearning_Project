@@ -53,18 +53,33 @@ namespace jeu_de_maths
         {
             const int NOMBRE_MIN = 1;
             const int NOMBRE_MAX = 10;
-           
+            const int NB_QUESTION = 3;
+            int score = 0;
+
+
+
+            for (int i = 0; i < NB_QUESTION; i++)
+            {
+                Console.WriteLine("Question n° " + (i + 1) + "/" + NB_QUESTION + "!");
                 bool resultat_1 = PoserQuestion(NOMBRE_MIN, NOMBRE_MAX + 1);
                 if (resultat_1)
                 {
+                    Console.WriteLine();
+                    Console.WriteLine("+++");
                     Console.WriteLine("Félicitation, bonne réponse");
+                    Console.WriteLine("+++");
+                    score++;
                 }
                 else
                 {
+                    Console.WriteLine();
+                    Console.WriteLine("---");
                     Console.WriteLine("Dommage, Mauvaise Réponse");
+                    Console.WriteLine("---");
                 }
-            
-            
+                Console.WriteLine("");
+            }
+            Console.WriteLine(" Votre score est de " + score + "/" + NB_QUESTION + " !!");
         }
         
     }
