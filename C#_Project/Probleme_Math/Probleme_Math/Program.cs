@@ -37,9 +37,18 @@ namespace jeu_de_maths
                         resultatAttendu = a * b;
                         break;
                     case E_Operateur.SOUSTRACTION:
-                        Console.WriteLine(a + " - " + b + " =");
-                        resultatAttendu = a - b;
-                        break;
+                        if (a > b)
+                        {
+                            Console.WriteLine(a + " - " + b + " =");
+                            resultatAttendu = a - b;
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine(b + " - " + a + " =");
+                            resultatAttendu = b - a;
+                            break;
+                        }
                     case E_Operateur.DIVISION:
                         Console.WriteLine(a + " / " + b + " =");
                         resultatAttendu = a / b;
