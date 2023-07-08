@@ -53,7 +53,7 @@ namespace jeu_de_maths
         {
             const int NOMBRE_MIN = 1;
             const int NOMBRE_MAX = 10;
-            const int NB_QUESTION = 3;
+            const int NB_QUESTION = 10;
             int score = 0;
 
 
@@ -80,7 +80,7 @@ namespace jeu_de_maths
                 Console.WriteLine("");
             }
             Console.WriteLine("Bonne réponse " + score + " sur " + NB_QUESTION);
-            float moyenne = NB_QUESTION / 2;
+            float moyenne = NB_QUESTION / 2f;
 
             if (score == NB_QUESTION)
             {
