@@ -4,20 +4,89 @@ namespace jeu_de_maths
 { 
     class Program
     {
+        enum E_Operateur
+        {
+            ADDITION = 1,
+            MULTIPLICATION = 2,
+            SOUSTRACTION = 3,
+            DIVISION = 4,
+            PUISSANCE = 5 
 
+        }
         static bool PoserQuestion(int min, int max)
         {
-            int reponseInt = 0;
-            int bonneReponse = 0;
-            bool resultat = false;
+            float reponseInt = 0f;
+
             while (true)
             {   
                 Random random = new Random();
 
                 int a = random.Next(min, max);
                 int b = random.Next(min, max);
+                E_Operateur o = (E_Operateur)random.Next(1, 4); // Puissance a implement
+                float resultatAttendu = 0f;
 
-                Console.Write(a + " + " + b + " = ");
+                switch (o)
+                {
+                    case E_Operateur.ADDITION:
+                        Console.WriteLine(a + " + " + b + " =");
+                        resultatAttendu = a + b;
+                        break;
+                    case E_Operateur.MULTIPLICATION:
+                        Console.WriteLine(a + " x " + b + " =");
+                        resultatAttendu = a * b;
+                        break;
+                    case E_Operateur.SOUSTRACTION:
+                        Console.WriteLine(a + " - " + b + " =");
+                        resultatAttendu = a - b;
+                        break;
+                    case E_Operateur.DIVISION:
+                        Console.WriteLine(a + " / " + b + " =");
+                        resultatAttendu = a / b;
+                        break;
+                    case E_Operateur.PUISSANCE:
+                        Console.WriteLine(a + " ^ " + b + " =");
+                        //resultatAttendu = a ** b;
+                        break;
+                    default:
+                        Console.WriteLine("ERREUR: Operateur invalide !");
+                        break;
+
+                }
+
+
+                /*
+                if (o == E_Operateur.ADDITION)
+                {
+                    Console.WriteLine(a + " + " + b + " =");
+                    resultatAttendu = a + b;
+                }
+                else if (o == E_Operateur.MULTIPLICATION)
+                {
+                    Console.WriteLine(a + " x " + b + " =");
+                    resultatAttendu = a * b;
+                }
+                else if (o == E_Operateur.SOUSTRACTION)
+                {
+                    Console.WriteLine(a + " - " + b + " =");
+                    resultatAttendu = a - b;
+                }
+                else if (o == E_Operateur.DIVISION)
+                {
+                    Console.WriteLine(a + " / " + b + " =");
+                    resultatAttendu = a / b;
+                }
+                else if (o == E_Operateur.PUISSANCE)
+                {
+                    Console.WriteLine(a + " ^ " + b + " =");
+                    //resultatAttendu = a ** b;
+                }
+                else
+                {
+                    Console.WriteLine("ERREUR: Operateur invalide !"); 
+                }
+                */
+
                 string reponse = Console.ReadLine();
                 try
                 {
@@ -32,12 +101,12 @@ namespace jeu_de_maths
                      */
 
                      
-                    reponseInt = int.Parse(reponse);
-                    bonneReponse = a + b;
-                    resultat = bonneReponse == reponseInt;
-                    break;
-                   
-
+                    reponseInt = float.Parse(reponse);
+                    if (reponseInt == resultatAttendu) 
+                    {
+                        return true;
+                    }
+                    return false;
                 }
                 catch
                 {
@@ -45,7 +114,6 @@ namespace jeu_de_maths
                 }
 
             }
-            return resultat;
         }
 
 
