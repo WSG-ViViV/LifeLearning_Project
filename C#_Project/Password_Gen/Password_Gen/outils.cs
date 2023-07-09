@@ -42,15 +42,7 @@ namespace FormationCS
                 try
                 {
                     int longeurPassInt = int.Parse(longeurPass);
-                    //if (longeurPassInt <= 0)
-                    //{
-                    //    Console.WriteLine("Le nombre ne peux pas etre negatif !");
-                    //}
-                    ///else
-                    //{
                     return longeurPassInt;
-                    //}
-
                 }
                 catch
                 {
