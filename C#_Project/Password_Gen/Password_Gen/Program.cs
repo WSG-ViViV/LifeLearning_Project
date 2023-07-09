@@ -1,5 +1,5 @@
 ﻿using System;
-
+using FormationCS;
 
 namespace Password_Gen
 {
@@ -7,35 +7,16 @@ namespace Password_Gen
     class Program
     {
 
-        static int DemanderNombre(string question)
-        { 
-            while (true)
-            {
-                Console.WriteLine(question);
-                string longeurPass = Console.ReadLine();
-                try
-                {
-                   int longeurPassInt = int.Parse(longeurPass);
-                    if (longeurPassInt <= 0)
-                    {
-                        Console.WriteLine("Le nombre ne peux pas etre negatif !");
-                    }
-                    else
-                    {
-                        return longeurPassInt;
-                    }
-                    
-                }
-                catch
-                {
-                    Console.WriteLine("ERREUR: Veuillez entrer un nombre valide!!");
-                } 
-            }
-        }
-
         static void Main(string[] args)
         {
-             int longeurPassword = DemanderNombre("Longeur du mot de passe ?");
+
+            const int MINIMUM = 1;
+            const int MAXIMUM = 10;
+
+            int longeurPassword = outils.DemanderNombreEntre("Longeur du mot de passe ?", MINIMUM, MAXIMUM);
+            Console.WriteLine("vous avez taper: " +  longeurPassword);
+            int nombrePositif = outils.DemanderNombrePositifNonNul("Nombre iteration ?");
+            Console.WriteLine("Vous avez choisis " + nombrePositif + " iteration !");
         }
     }
 }
