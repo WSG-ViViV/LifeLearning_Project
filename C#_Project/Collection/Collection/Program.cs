@@ -1,6 +1,5 @@
 ﻿using System;
-
-
+using System.Threading.Channels;
 
 namespace Collection
 {
@@ -32,8 +31,30 @@ namespace Collection
         {
             Console.WriteLine();
             Console.WriteLine("-_-_-_-_-_-_");
-            Console.WriteLine("La valeur Maximale du tableau est : " + tableau.Max());
+            Console.WriteLine("La valeur maximale du tableau est : " + tableau.Max());
             Console.WriteLine("-_-_-_-_-_-_");
+
+        }
+
+        static void AfficherValeurMinimal(int[] tableau)
+        {
+            Console.WriteLine();
+            Console.WriteLine("---------------");
+            Console.WriteLine("La valeur minimal du tableau est : " + tableau.Min());
+            Console.WriteLine("---------------");
+        }
+
+        static void SommeTableau(int[] tableau)
+        {
+            int somme = 0;
+            for (int i = 0; i < tableau.Length; i++)
+            {
+                somme += tableau[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine("+++++++++++++++");
+            Console.WriteLine("La somme du tableau est : " + somme);
+            Console.WriteLine("+++++++++++++++");
 
         }
 
@@ -41,8 +62,10 @@ namespace Collection
         {
             //int[] t = { 10, 55, 12, 234, 3634, 123, 123, 453245, 4356, 14648 };
             
-            int[] t = new int[10];
+            
             Random rand = new Random();
+            int tailleTableau = rand.Next(1, 19+1);
+            int[] t = new int[tailleTableau];
 
             for (int j = 0; j < t.Length; j++)
             {
@@ -52,7 +75,15 @@ namespace Collection
             AfficherTableau(t);
 
             AfficherValeurMaximale(t);
+
+            AfficherValeurMinimal(t);
+
+            SommeTableau(t);
+
+            Console.WriteLine();
+            Console.WriteLine("Fin du script =))");
             
+
 
         }
     }
